@@ -9,7 +9,7 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 
-cluster = MongoClient("mongodb+srv://bjgunaman:kysku8-haRrev-porxak@cluster0-zzckb.mongodb.net/test?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://yourAccount.mongodb.net/test?retryWrites=true&w=majority")
 db = cluster["test"]
 collection = db["test"]
 collection2 = db["test2"]
